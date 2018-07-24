@@ -1,6 +1,5 @@
-# vue-typescript-class-component-jest
-A minimal working version that allows Jest to read the compiled JavaScript output when using vue + typescript with vue-class-component or vue-property-decorator styled components.
+# vue-typescript-jest
 
-babelrc is needed by jest-vue-preprocessor
+Minimal configuration for Vue + vue-test-utils + Typescript + Jest
 
-Inspired by [this repo](https://github.com/blocka/strange-jest-behavior)
+Inspired by [this repo](https://github.com/schoening/vue-typescript-class-component-jest)
