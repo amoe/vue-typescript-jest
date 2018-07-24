@@ -1,17 +1,11 @@
 <template>
     <div id="app">
-        <!-- message is not a prop -->
-        <!-- so the output is gonna be "!" -->
-        <regular-component :myProp="prop"></regular-component>
-        <class-component :myProp="prop"></class-component>
-        <property-decorator :myProp="prop"></property-decorator>
+      <counter></counter>
     </div>
 </template>
 
 <script lang="ts">
-import RegularComponent from "./components/RegularComponent.vue";
-import ClassComponent from "./components/ClassComponent.vue";
-import PropertyDecorator from "./components/PropertyDecorator.vue";
+import Counter from "./components/Counter.vue";
 
 export default {
     data () { 
@@ -21,9 +15,7 @@ export default {
         };
     },
     components: {
-        RegularComponent,
-        ClassComponent,
-        PropertyDecorator
+        Counter
     }
 }
 </script>
