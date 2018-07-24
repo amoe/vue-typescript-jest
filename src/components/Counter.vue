@@ -8,17 +8,19 @@
 <script lang="ts">
 import Vue from 'vue';
 
-export default Vue.extend({
-    data () {
-        return {
-            count: 0
-        }
-    },
+export default Vue.extend(
+    {
+        data () {
+            return {
+                count: 0
+            }
+        },
 
-    methods: {
-        increment () {
-            this.count++
+        methods: {
+            increment () {
+                this.count++
+            }
         }
     }
-};
+);
 </script>
