@@ -20,5 +20,5 @@ export default Vue.extend({
             this.count++
         }
     }
-});
+};
 </script>
