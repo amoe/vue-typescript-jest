@@ -6,6 +6,8 @@
     <p>The value is: <code>{{count}}</code></p>
     <button v-on:click="greet">Greet</button>
     <button v-on:click="doIncrement">Inc</button>
+
+    <counter></counter>
   </div>
 </template>
 
