@@ -56,4 +56,15 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin()
     ],
+    // Because most apps using this template are desktop-focused, we don't
+    // bother about the code-splitting configuration, which increases internal
+    // complexity considerably.
+    //
+    // Set performance hints to true if building for mobile, and you'll need to
+    // modify this configuration a lot to set up code-splitting.
+    // 
+    // <https://github.com/webpack/webpack/issues/3216>
+    performance: {
+        hints: false
+    }
 }
