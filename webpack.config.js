@@ -48,12 +48,9 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js', '.vue', '.json'],
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js'
-        }
+        extensions: ['.ts', '.js', '.vue']
     },
-    devtool: '#eval-source-map',
+    devtool: 'inline-source-map',
     plugins: [
         new webpack.DefinePlugin(loadDefinitions()),
         new VueLoaderPlugin()
