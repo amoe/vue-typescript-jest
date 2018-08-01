@@ -10,19 +10,39 @@
 </template>
 
 <script lang="ts">
-import Counter from "./Counter.vue";
+import Counter from './Counter.vue';
 
-export default {
-    data () { 
+import Vue from 'vue';
+import Vuex from 'vuex';
+import utility from '../utility';
+
+export default Vue.extend({
+    components: {
+        Counter   // XXX NECESSARY!
+    },
+    data: function() {
         return {
-            message: "Hello world!",
-            prop: "!" 
         };
     },
-    components: {
-        Counter
+    methods: {
+        greet() {
+            console.log("hello");
+            console.log("state val is %o", this.$store.state.count);
+        },
+        doIncrement() {
+            this.$store.dispatch('increment');
+        },
+    },
+    // mapState doesn't work with typescript: "Property 'mapState' does not exist on type"
+    // So we manually create the relevant computed properties.
+    computed: {
+        count: function (this: any) {
+            return this.$store.state.count;
+        }
     }
-}
+});
+
+
 </script>
 
 <style>
