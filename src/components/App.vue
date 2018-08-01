@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import Counter from "./components/Counter.vue";
+import Counter from "./Counter.vue";
 
 export default {
     data () { 
