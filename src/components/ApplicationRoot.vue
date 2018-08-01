@@ -19,3 +19,16 @@ export default {
     }
 }
 </script>
+
+<style>
+body {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdfdfd;
+}
+
+h1,h2 { font-family: Georgia; }
+
+p, label { font-family: Arial, sans-serif; }
+</style>
