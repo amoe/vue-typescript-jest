@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+const loadDefinitions = require('./build/load-definitions');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
@@ -54,6 +55,7 @@ module.exports = {
     },
     devtool: '#eval-source-map',
     plugins: [
+        new webpack.DefinePlugin(loadDefinitions()),
         new VueLoaderPlugin()
     ],
     // Because most apps using this template are desktop-focused, we don't
