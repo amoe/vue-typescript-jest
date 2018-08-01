@@ -1,8 +1,14 @@
 import Vue from "vue";
+import Element from 'element-ui';
 import ApplicationRoot from "./components/ApplicationRoot.vue";
 import store from './vuex/store';
 import mymodule from './mymodule';
 import * as log from 'loglevel';
+import 'element-ui/lib/theme-chalk/index.css';
+import locale from 'element-ui/lib/locale/lang/en'
+
+Vue.use(Element, { locale });
+
 
 log.setLevel('debug');
 

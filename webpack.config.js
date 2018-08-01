@@ -22,13 +22,21 @@ module.exports = {
                     appendTsSuffixTo: [/\.vue$/],
                 }
             },
+            // BEGIN rules needed for element-ui
             {
                 test: /\.css$/,
-                use: [
-                    'vue-style-loader',
-                    'css-loader'
-                ]
+                use: ['style-loader', 'css-loader', 'postcss-loader']
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 10000
+                    }
+                }]
             }
+            // END rules needed for element-ui
         ]
     },
     resolve: {
