@@ -1,7 +1,12 @@
 <template>
-    <div id="app">
-      <counter></counter>
-    </div>
+  <div>
+    <h1>New Project from amoe-vue-template</h1>
+
+    <p>Hi there!</p>
+    <p>The value is: <code>{{count}}</code></p>
+    <button v-on:click="greet">Greet</button>
+    <button v-on:click="doIncrement">Inc</button>
+  </div>
 </template>
 
 <script lang="ts">
