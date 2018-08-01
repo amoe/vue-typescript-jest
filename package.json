@@ -36,6 +36,7 @@
             "^.+\\.vue$": "vue-jest",
             ".(ts|tsx)": "ts-jest"
         },
-        "testMatch": ["<rootDir>/test/*.ts"]
+        "testMatch": ["<rootDir>/test/*.ts"],
+        "testURL": "http://localhost/"
     }
 }
